@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- propiedades del archivo-->
+
+    <title>Horiario</title>
+    <!--propiedades predefinidas de la tabla-->
+    <!--no he puesto borde de 1px porque asi tiene un resultado mas claro-->
+    <style>  
+        th{background-color:rgb(26, 26, 26) ; color:yellow;}
+        td{background-color: rgb(46, 46, 46); color:white; transition: 0.2s; }
+        td:hover{
+            background-color: greenyellow;
+            transform: scale(1.2);
+            color: black; 
+        }
+       
+        
+    </style>
+</head>
+
+<body style="background-color:rgb(41, 41, 41) ;">
+    <h1 style="text-align:center; color: yellow;">Horario Clase</h1>
+
+    <table style="width:100%">
+        <tr> <!--primera fila-->
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+
+        </tr>    
+        <tr><!--segunda fila-->
+            <th>8:00-9:00</th>
+            <td rowspan="2">Redes Locales</td>
+            <td rowspan="2">Montaje de ordenadores</td>
+            <td rowspan="2">Aplicaciones Ofimaticas</td>
+            <td> FOL </td>
+            <td>Inglés</td>
+        </tr>
+        <tr><!--tercera fila-->
+            <th>9:00-10:00</th>
+            <td>Tutoria</td>
+            <td>Aplicaciones web</td>
+        </tr>
+        <tr><!--cuarta fila Patio-->
+            <th>10:00-10:15</th>
+            <td colspan="5" style="text-align:center ;">Patio</td>
+        </tr>
+        <tr><!--quinta fila-->
+            <th>10:15-11:15</th>
+            <td>Seguridad Informatica</td>
+            <td rowspan="2">Sistemas Operativos</td>
+            <td rowspan="2">seguridad informatica</td>
+            <td>Montaje de Ordenadores</td>
+            <td>Redes Locales</td>
+        </tr>
+        <tr><!--sexta fila-->
+            <th>11:15-12:15</th>
+            <td>Redes Locales</td>
+            <td>Inglés tecnico</td>
+            <td>FOL</td>
+        </tr>
+        <tr><!--septima fila Patio 2-->
+            <th>12:15-12:25</th>
+            <td colspan="5" style="text-align:center ;">Patio 2</td>
+        </tr>
+        <tr><!--octava fila-->
+            <th>12:25-13:25</th>
+            <td rowspan="2">Aplicaciónes web</td>
+            <td>Aplicaciónes Ofimaticas</td>
+            <td>Sistemas Operativos</td>
+            <td>Inglés tecnico</td>
+            <td>Montaje de Ordenadores</td>
+        </tr>
+        <tr><!--novena fila-->
+            <th>13:25-14:25</th>
+            <td colspan="2">Redes Locales</td>
+            <td colspan="2">Aplicaciónes Ofimaticas</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
